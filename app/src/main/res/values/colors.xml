@@ -6,16 +6,17 @@
 
 
     <array name="randomColors">
-        <item name="random1">#7800F5</item>
-        <item name="random2">#25B6D2</item>
-        <item name="random3">#F5003C</item>
-        <item name="random4">#F5C300</item>
-        <item name="random5">#00C6F5</item>
-        <item name="random6">#ffa000</item>
-        <item name="random7">#3BCA87</item>
-        <item name="random8">#FF8C92FA</item>
-        <item name="random9">#db97f1</item>
-        <item name="random10">#3BCA87</item>
-        <item name="random11">#FF9B70</item>
+        <item name="random1">#00C6F5</item>
+        <item name="random2">#ffa000</item>
+        <item name="random3">#3BCA87</item>
+        <item name="random4">#FF8C92FA</item>
+        <item name="random5">#db97f1</item>
+        <item name="random6">#3BCA87</item>
+        <item name="random7">#FF9B70</item>
+        <item name="random8">#7800F5</item>
+        <item name="random9">#25B6D2</item>
+        <item name="random10">#F5003C</item>
+        <item name="random11">#F5C300</item>
+
     </array>
 </resources>

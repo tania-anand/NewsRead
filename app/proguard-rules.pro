@@ -51,6 +51,14 @@
  public void *(android.view.View);
 }
 
+-keep class com.squareup.picasso.**{ *; }
+-keep interface com.squareup.picasso.**{ *; }
+-dontwarn com.squareup.picasso.**
+
+-keep class com.android.volley.**{ *; }
+-keep interface com.android.volley.**{ *; }
+-dontwarn com.android.volley.**
+
 
 -keep class readsms.com.readsms.model
 -keepclassmembers class api.news.com.newsapi.model.**{ *; }

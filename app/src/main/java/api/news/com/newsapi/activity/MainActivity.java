@@ -104,12 +104,13 @@ public class MainActivity extends AppCompatActivity {
         mAdapter = new NewsCategoryAdapter(MainActivity.this, mCategoryArrayList, mapCategory);
         mRecyclerView.setAdapter(mAdapter);
 
+
     }
 
 
     private void fetchNewsContent(){
-        mCategoryArrayList.clear();
-        mapCategory.clear();
+        mapCategory = new HashMap<>();
+        mCategoryArrayList = new ArrayList<>();
         mProgressBar.setVisibility(View.VISIBLE);
         RequestQueue queue = Volley.newRequestQueue(this);
         StringRequest stringRequest = new StringRequest(Request.Method.GET, Config.URL_RETREIVE_NEWS_SOURCES, new Response.Listener<String>() {
@@ -195,8 +196,9 @@ public class MainActivity extends AppCompatActivity {
                     if(i == jsonArray.length() - 1 ) {
                         mProgressBar.setVisibility(View.GONE);
                         mSwipeRefreshLayout.setRefreshing(false);
-                        mCategoryArrayList.addAll(mapCategory.keySet());
+                        mCategoryArrayList.addAll(0,mapCategory.keySet());
                         mAdapter.setmHashMap(mapCategory);
+                        mAdapter.setmCategoryList(mCategoryArrayList);
                         mAdapter.notifyDataSetChanged();
 
                     }

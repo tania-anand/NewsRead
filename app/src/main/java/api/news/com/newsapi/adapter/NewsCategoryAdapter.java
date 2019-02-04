@@ -50,6 +50,10 @@ public class NewsCategoryAdapter extends RecyclerView.Adapter<NewsCategoryAdapte
         return mCategoryList.size();
     }
 
+    public void setmCategoryList(ArrayList<String> mCategoryList) {
+        this.mCategoryList = mCategoryList;
+    }
+
     class MyViewHolder extends RecyclerView.ViewHolder {
         RecyclerView categoryRv;
         TextView txtCategoryName;
