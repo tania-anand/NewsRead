@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#c62828</color>
+    <color name="colorPrimaryDark">#8e0000</color>
+    <color name="colorAccent">#ff5f52</color>
+
+
+    <array name="randomColors">
+        <item name="random1">#7800F5</item>
+        <item name="random2">#25B6D2</item>
+        <item name="random3">#F5003C</item>
+        <item name="random4">#F5C300</item>
+        <item name="random5">#00C6F5</item>
+        <item name="random6">#ffa000</item>
+        <item name="random7">#3BCA87</item>
+        <item name="random8">#FF8C92FA</item>
+        <item name="random9">#db97f1</item>
+        <item name="random10">#3BCA87</item>
+        <item name="random11">#FF9B70</item>
+    </array>
+</resources>
