@@ -122,7 +122,7 @@ public class NewSourceTopHeadlines extends AppCompatActivity {
 
     private void fetchNewsSourceTopHeadlines(){
 
-        String URL = "https://newsapi.org/v2/top-headlines?sourcesgit status ="+mNewsSource+"&apiKey=c20fa497f8ca40338d33aa8bbbae1bbe";
+        String URL = "https://newsapi.org/v2/top-headlines?sourcesgit ="+mNewsSource+"&apiKey=c20fa497f8ca40338d33aa8bbbae1bbe";
 
         mProgressBar.setVisibility(View.VISIBLE);
         RequestQueue queue = Volley.newRequestQueue(this);
@@ -162,19 +162,6 @@ public class NewSourceTopHeadlines extends AppCompatActivity {
                 params.put("content-type", "application/json;  charset=utf-8");
                 return params;
             }
-
-            @Override
-            protected Map<String, String> getParams() throws AuthFailureError
-            {
-
-                HashMap<String, String> map = new HashMap<>();
-                map.put("source",mNewsSource);
-
-                return map;
-
-            }
-
-
         };
 
         // Add the request to the RequestQueue.
