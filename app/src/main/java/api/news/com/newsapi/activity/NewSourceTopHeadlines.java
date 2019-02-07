@@ -122,9 +122,11 @@ public class NewSourceTopHeadlines extends AppCompatActivity {
 
     private void fetchNewsSourceTopHeadlines(){
 
+        String URL = "https://newsapi.org/v2/top-headlines?sourcesgit status ="+mNewsSource+"&apiKey=c20fa497f8ca40338d33aa8bbbae1bbe";
+
         mProgressBar.setVisibility(View.VISIBLE);
         RequestQueue queue = Volley.newRequestQueue(this);
-        StringRequest stringRequest = new StringRequest(Request.Method.GET, Config.URL_RETREIVE_NEWS, new Response.Listener<String>() {
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, URL, new Response.Listener<String>() {
 
             @Override
             public void onResponse(String response) {
